@@ -1,1 +1,60 @@
-cd04
+
+
+
+
+
+<!DOCTYPE html> 
+<html> 
+<body>
+     <a href="../../../">Home</a>-><a href="../../">docs</a>-><a href="../">cds</a>->cd04 
+  <br>
+V1.6.9
+<br>
+<button onclick="play(1)" type="button">1</button>-
+<button onclick="play(2)" type="button">2</button>-
+<button onclick="play(3)" type="button">3</button>-
+<button onclick="play(4)" type="button">4</button>-
+<button onclick="play(5)" type="button">5</button>-
+<button onclick="play(6)" type="button">6</button>-
+<button onclick="play(7)" type="button">7</button>-
+<button onclick="play(8)" type="button">8</button>-
+<button onclick="play(9)" type="button">9</button>
+
+<br>
+
+<Audio id="myVideo" controls autoplay>
+  <source id="mp4_src" src="https://littleflute.github.io/c615/docs/cds/cd02/01 Together.mp3" type="video/mp4"> 
+  Your browser does not support HTML5 video.
+</Audio>
+
+<script> 
+var vid = document.getElementById("myVideo");
+
+function play(i) {
+    var s = "";
+    if(i==1) s = "https://littleflute.github.io/c615/docs/cds/cd04/01 Together.mp3";// + i + " Lecture 1." + i + ".mp3"; 
+    if(i==2) s = "https://littleflute.github.io/c615/docs/cds/cd04/02 Hot Fun In the Summertime.mp3";// + i + " Lecture 1." + i + ".mp3"; 
+    vid.src = s;
+    vid.load();
+} 
+</script> 
+ <p id="demo"></p>
+
+<script>
+
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myObj = JSON.parse(this.responseText);
+        document.getElementById("demo").innerHTML = myObj.name;
+    }
+};
+xmlhttp.open("GET", "https://littleflute.github.io/c615/docs/cds/cd04/d.txt", true);
+xmlhttp.send();
+
+</script>
+
+<p>cd01 MP3 文件列表: <a href="d.txt" target="_blank">d.txt</a></p>
+
+</body> 
+</html>
