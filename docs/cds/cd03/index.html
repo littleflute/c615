@@ -4,9 +4,9 @@
 <!DOCTYPE html> 
 <html> 
 <body>
-     <a href="../../../">Home</a>-><a href="../../">docs</a>-><a href="../">cds</a>->cd01 
+     <a href="../../../">Home</a>-><a href="../../">docs</a>-><a href="../">cds</a>->cd03
   <br>
-V1.6.8
+V1.6.9
 <br>
 <button onclick="play(1)" type="button">1</button>-
 <button onclick="play(2)" type="button">2</button>-
@@ -21,7 +21,7 @@ V1.6.8
 <br>
 
 <Audio id="myVideo" controls autoplay>
-  <source id="mp4_src" src="https://littleflute.github.io/c614/docs/cds/cd03/01 (Your Love Keeps Lifting Me) Higher and Higher.mp3" type="video/mp4"> 
+  <source id="mp4_src" src="https://littleflute.github.io/c615/docs/cds/cd03/01 (Your Love Keeps Lifting Me) Higher and Higher.mp3" type="video/mp4"> 
   Your browser does not support HTML5 video.
 </Audio>
 
@@ -30,8 +30,8 @@ var vid = document.getElementById("myVideo");
 
 function play(i) {
     var s = "";
-    if(i==1) s = "https://littleflute.github.io/c614/docs/cds/cd03/01 (Your Love Keeps Lifting Me) Higher and Higher.mp3";// + i + " Lecture 1." + i + ".mp3"; 
-    if(i==2) s = "https://littleflute.github.io/c614/docs/cds/cd03/02 Bad Trip.mp3";// + i + " Lecture 1." + i + ".mp3"; 
+    if(i==1) s = "https://littleflute.github.io/c615/docs/cds/cd03/01 (Your Love Keeps Lifting Me) Higher and Higher.mp3";// + i + " Lecture 1." + i + ".mp3"; 
+    if(i==2) s = "https://littleflute.github.io/c615/docs/cds/cd03/02 Bad Trip.mp3";// + i + " Lecture 1." + i + ".mp3"; 
     vid.src = s;
     vid.load();
 } 
@@ -47,7 +47,7 @@ xmlhttp.onreadystatechange = function() {
         document.getElementById("demo").innerHTML = myObj.name;
     }
 };
-xmlhttp.open("GET", "https://littleflute.github.io/c614/docs/cds/cd03/d.txt", true);
+xmlhttp.open("GET", "https://littleflute.github.io/c615/docs/cds/cd03/d.txt", true);
 xmlhttp.send();
 
 </script>
